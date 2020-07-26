@@ -37,18 +37,18 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def response_message(event):
     # notesのCarouselColumnの各値は、変更してもらって結構です。
-    notes = [CarouselColumn(thumbnail_image_url="https://d.kuku.lu/5baa5f3319",
+    notes = [CarouselColumn(thumbnail_image_url="https://vps14-d.kuku.lu/files/20200726-1232_3ea73866bb9a2087de50eb757324b646.jpg",
                             title="【ReleaseNote】MindMap",
                             text="冴えた決断力を手にしたいアナタへ。",
                             actions=[{"type": "message","label": "詳しくはこちら","text": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
 
-            CarouselColumn(thumbnail_image_url="https://d.kuku.lu/e31f5aee99",
+            CarouselColumn(thumbnail_image_url="https://vps16-d.kuku.lu/files/20200726-1234_11ba60e794c05be607cfe8ed9a388a33.png",
                             title="【自己紹介】",
                             text="エンジニアとしての技術的記事をゆる～くまとめています。",
                             actions=[
                                 {"type": "message", "label": "詳しくはこちら", "text": "https://qiita.com/maruda"}]),
 
-            CarouselColumn(thumbnail_image_url="https://d.kuku.lu/8947bc4539",
+            CarouselColumn(thumbnail_image_url="https://vps16-d.kuku.lu/files/20200726-1236_81ff3a2f63cb3501b7dfa08e1fe4a2da.png",
                             title="【ReleaseNote】公式アカウントをリリース！",
                             text="各種サービスに繋げるQRコードを生成しました。",
                             actions=[
