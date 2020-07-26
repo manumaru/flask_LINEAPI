@@ -40,7 +40,7 @@ def response_message(event):
     notes = [CarouselColumn(thumbnail_image_url="https://vps14-d.kuku.lu/files/20200726-1232_3ea73866bb9a2087de50eb757324b646.jpg",
                             title="【ReleaseNote】MindMap",
                             text="冴えた決断力を手にしたいアナタへ。",
-                            actions=[{"type": "message","label": "詳しくはこちら","text": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
+                            actions=[{"type": "uri","label": "詳しくはこちら","linkUri": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
 
             CarouselColumn(thumbnail_image_url="https://vps16-d.kuku.lu/files/20200726-1234_11ba60e794c05be607cfe8ed9a388a33.png",
                             title="【自己紹介】",
