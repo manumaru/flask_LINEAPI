@@ -40,7 +40,7 @@ def response_message(event):
     notes = [CarouselColumn(thumbnail_image_url="https://d.kuku.lu/5baa5f3319",
                             title="【ReleaseNote】MindMap",
                             text="冴えた決断力を手にしたいアナタへ。",
-                            actions=[{"type": "message","label": "詳しくはこちら","text": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
+                            actions=[{"type": "uri","label": "詳しくはこちら","linkuri": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
 
              CarouselColumn(thumbnail_image_url="https://d.kuku.lu/e31f5aee99",
                             title="【自己紹介】",
@@ -52,7 +52,7 @@ def response_message(event):
                             title="【ReleaseNote】公式アカウントをリリース！",
                             text="各種サービスに繋げるQRコードを生成しました。",
                             actions=[
-                                {"type": "message", "label": "友達追加はこちら", "text": "https://renttle.jp/notes/kota/5"}])]
+                                {"type": "uri", "label": "友達追加はこちら", "linkuri": "https://renttle.jp/notes/kota/5"}])]
 
     messages = TemplateSendMessage(
         alt_text='template',
