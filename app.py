@@ -1,6 +1,6 @@
 import os
 
-flom flask import Flask, request, abort
+from flask import Flask, request, abort
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -43,7 +43,7 @@ def response_message(event):
                             actions=[{"type": "message","label": "サイトURL","text": "https://renttle.jp/notes/kota/7"}]),
 
              CarouselColumn(thumbnail_image_url="https://renttle.jp/static/img/renttle03.jpg",
-                            title="ReleaseNote】創作中の活動を報告する機能を追加しました。",
+                            title="【ReleaseNote】創作中の活動を報告する機能を追加しました。",
                             text="創作中や考え中の時点の活動を共有できる機能を追加しました。",
                             actions=[
                                 {"type": "message", "label": "サイトURL", "text": "https://renttle.jp/notes/kota/6"}]),
