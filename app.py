@@ -37,22 +37,22 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def response_message(event):
     # notesのCarouselColumnの各値は、変更してもらって結構です。
-    notes = [CarouselColumn(thumbnail_image_url="https://renttle.jp/static/img/renttle02.jpg",
-                            title="【ReleaseNote】トークルームを実装しました。",
-                            text="creation(創作中・考え中の何かしらのモノ・コト)に関して、意見を聞けるようにトークルーム機能を追加しました。",
-                            actions=[{"type": "message","label": "サイトURL","text": "https://renttle.jp/notes/kota/7"}]),
+    notes = [CarouselColumn(thumbnail_image_url="https://d.kuku.lu/5baa5f3319",
+                            title="【ReleaseNote】MindMap",
+                            text="冴えた決断力を手にしたいアナタへ。",
+                            actions=[{"type": "message","label": "詳しくはこちら","text": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
 
-             CarouselColumn(thumbnail_image_url="https://renttle.jp/static/img/renttle03.jpg",
-                            title="【ReleaseNote】創作中の活動を報告する機能を追加しました。",
-                            text="創作中や考え中の時点の活動を共有できる機能を追加しました。",
+             CarouselColumn(thumbnail_image_url="https://d.kuku.lu/e31f5aee99",
+                            title="【自己紹介】",
+                            text="エンジニアとしての技術的記事をゆる～くまとめています。",
                             actions=[
-                                {"type": "message", "label": "サイトURL", "text": "https://renttle.jp/notes/kota/6"}]),
+                                {"type": "message", "label": "詳しくはこちら", "text": "https://qiita.com/maruda"}]),
 
-             CarouselColumn(thumbnail_image_url="https://renttle.jp/static/img/renttle04.jpg",
-                            title="【ReleaseNote】タグ機能を追加しました。",
-                            text="「イベントを作成」「記事を投稿」「本を登録」にタグ機能を追加しました。",
+             CarouselColumn(thumbnail_image_url="https://d.kuku.lu/8947bc4539",
+                            title="【ReleaseNote】公式アカウントをリリース！",
+                            text="各種サービスに繋げるQRコードを生成しました。",
                             actions=[
-                                {"type": "message", "label": "サイトURL", "text": "https://renttle.jp/notes/kota/5"}])]
+                                {"type": "message", "label": "友達追加はこちら", "text": "https://renttle.jp/notes/kota/5"}])]
 
     messages = TemplateSendMessage(
         alt_text='template',
