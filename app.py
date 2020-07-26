@@ -40,7 +40,7 @@ def response_message(event):
     notes = [CarouselColumn(thumbnail_image_url="https://d.kuku.lu/5baa5f3319",
                             title="【ReleaseNote】MindMap",
                             text="冴えた決断力を手にしたいアナタへ。",
-                            actions=[{"type": "uri","label": "詳しくはこちら","linkuri": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
+                            actions=[{"type": "uri","label": "詳しくはこちら","linkUri": "https://sketchboard.me/JCfPOpNMvTkL#/"}]),
 
              CarouselColumn(thumbnail_image_url="https://d.kuku.lu/e31f5aee99",
                             title="【自己紹介】",
@@ -52,7 +52,13 @@ def response_message(event):
                             title="【ReleaseNote】公式アカウントをリリース！",
                             text="各種サービスに繋げるQRコードを生成しました。",
                             actions=[
-                                {"type": "uri", "label": "友達追加はこちら", "linkuri": "https://d.kuku.lu/d8be3f5776"}])]
+                                {"type": "uri", "label": "友達追加はこちら", "linkUri": "https://d.kuku.lu/d8be3f5776"}])]
+
+             CarouselColumn(thumbnail_image_url="https://d.kuku.lu/8947bc4539",
+                            title="【野生の○○が現れた！】",
+                            text="鳴き声を聞く",
+                            actions=[
+                                { "type": "audio",  "originalContentUrl": "https://maoudamashii.jokersounds.com/music/bgm/m4a/bgm_maoudamashii_piano39.m4a","duration": 60000}])]
 
     messages = TemplateSendMessage(
         alt_text='template',
